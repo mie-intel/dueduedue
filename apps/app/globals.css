@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Primary — Celo Green --- */
+  --color-primary:       #b174e7;
+  --color-primary-dark:  #cea8f0;
+  --color-primary-light: #e2cbf6;
+
+  /* --- Secondary — Celo Gold (official #FCFF52) --- */
+  --color-secondary:       #FCFF52;
+  --color-secondary-dark:  #C8CC00;
+  --color-secondary-light: #FEFFD6;
+
+  /* --- Background --- */
+  --color-bg-page:    #FBF6F1;
+  --color-bg-card:    #FFFFFF;
+  --color-bg-overlay: rgb(0 0 0 / 0.5);
+
+  /* --- Text --- */
+  --color-text-primary:   #1A0329;
+  --color-text-secondary: #6B7280;
+  --color-text-inverse:   #FFFFFF;
+  --color-text-accent:    #35D07F;
+
+  /* --- Semantic --- */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error:   #EF4444;
+  --color-info:    #3B82F6;
+
+  /* --- Typography — Celo brand: EB Garamond (titles/body) + Jost (CTAs/UI) --- */
+  --font-sans:    var(--font-jost), sans-serif;
+  --font-display: var(--font-eb-garamond), Georgia, serif;
+}
+
+body {
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}

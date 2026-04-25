@@ -1,0 +1,34 @@
+{
+  "name": "apps",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "seed": "npx tsx scripts/seed-questions.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@privy-io/react-auth": "^3.22.1",
+    "@upstash/redis": "^1.37.0",
+    "next": "16.2.4",
+    "pinata": "^2.5.5",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "viem": "2.47.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "dotenv": "^17.4.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
