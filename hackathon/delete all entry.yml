@@ -1,0 +1,23 @@
+info:
+  name: delete all entry
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://musical-gibbon-104311.upstash.io
+  headers:
+    - name: Authorization
+      value: Bearer gQAAAAAAAZd3AAIgcDFkOWYzZGQ3MTMzNWY0OWU1YTk4NDBiZWE1ZmU0ZDFhMw
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"cmd":["KEYS","*"]}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
