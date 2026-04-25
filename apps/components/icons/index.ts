@@ -1,0 +1,9 @@
+export { GamepadIcon } from './GamepadIcon';
+export { CoinIcon } from './CoinIcon';
+export { SwordsIcon } from './SwordsIcon';
+export { CameraIcon } from './CameraIcon';
+export { UserIcon } from './UserIcon';
+export { LogIcon } from './LogIcon';
+export { CheckCircleIcon } from './CheckCircleIcon';
+export { XCircleIcon } from './XCircleIcon';
+export { AlertIcon } from './AlertIcon';
