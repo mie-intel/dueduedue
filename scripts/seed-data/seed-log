@@ -1,0 +1,154 @@
+> apps@0.1.0 seed /mnt/d/SOSKOD/projects/duelpic/apps
+> npx tsx scripts/seed-questions.ts
+
+npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "npm-globalconfig". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◇ injected env (16) from .env.local // tip: ⌘ enable debugging { debug: true }
+IDRX balance: 200000, need: 200000
+questionPoolAddress: 0x1BeB8f692F42a43fFD396e61a364f601F50Eb528
+account: 0xe21b33dF9b9dABEDC240E69b5D3219693F00680a
+MON balance: 19963935341301083175
+questionCount: 4
+
+Processing: CARPET.png → CARPET
+  Uploaded to IPFS: bafkreihqno4upfjiyj5sti6os6cjtyq7gghd2wkusknctqfhdqc4f7v6cq
+  Fee paid
+  Simulate OK, would return id: 5
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x0000000000000000000000000000000000000000000000000000000000000005',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 5
+  Verified
+  Stored in Redis: question:5:*
+
+Processing: FIREBALL.png → FIREBALL
+  Uploaded to IPFS: bafkreihcspvvnaumgb3vzq633ws3rrg53pf5cclej2lerqt2uusqgcv5qu
+  Fee paid
+  Simulate OK, would return id: 6
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x0000000000000000000000000000000000000000000000000000000000000006',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 6
+  Verified
+  Stored in Redis: question:6:*
+
+Processing: GERMAN.png → GERMAN
+  Uploaded to IPFS: bafkreiejfjr4vj5ij63uhyrklwu2yjdgjqsioonah5f6roml73bcej2gfq
+  Fee paid
+  Simulate OK, would return id: 7
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x0000000000000000000000000000000000000000000000000000000000000007',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 7
+  Verified
+  Stored in Redis: question:7:*
+
+Processing: HOTDOG.png → HOTDOG
+  Uploaded to IPFS: bafkreidlcpc6xesxbj3a3pu6mvy73b7m4jqblqh2vnf4igu6sfu2ieo45a
+  Fee paid
+  Simulate OK, would return id: 8
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x0000000000000000000000000000000000000000000000000000000000000008',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 8
+  Verified
+  Stored in Redis: question:8:*
+
+Processing: KARATE.png → KARATE
+  Uploaded to IPFS: bafkreig5ooy2iliwjf5f7k4xvjmlqmwo2s6xkhn5rkhtdeyeagl556einm
+  Fee paid
+  Simulate OK, would return id: 9
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x0000000000000000000000000000000000000000000000000000000000000009',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 9
+  Verified
+  Stored in Redis: question:9:*
+
+Processing: KNOWLEDGE.png → KNOWLEDGE
+  Uploaded to IPFS: bafkreidycogdrkvvs3hhtifhfeabhciq6alxv4x5vfu7xalwfkdwgbvw3y
+  Fee paid
+  Simulate OK, would return id: 10
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x000000000000000000000000000000000000000000000000000000000000000a',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 10
+  Verified
+  Stored in Redis: question:10:*
+
+Processing: PANCAKE.png → PANCAKE
+  Uploaded to IPFS: bafkreibypb52vnjl3m4xnchl7uks4n3ockgxdto62kta63e4fdymzz3nna
+  Fee paid
+  Simulate OK, would return id: 11
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x000000000000000000000000000000000000000000000000000000000000000b',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 11
+  Verified
+  Stored in Redis: question:11:*
+
+Processing: RAINBOW.png → RAINBOW
+  Uploaded to IPFS: bafkreiea56gqum5hcp22yuybf4ib32cjiz2q4p6zk42yrh4wgg7kkwnepm
+  Fee paid
+  Simulate OK, would return id: 12
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x000000000000000000000000000000000000000000000000000000000000000c',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 12
+  Verified
+  Stored in Redis: question:12:*
+
+Processing: SEASON.png → SEASON
+  Uploaded to IPFS: bafkreidrl5x7lexligqbmias2tpnfu5sytwwlotwcdg2uodtok7y3yekwq
+  Fee paid
+  Simulate OK, would return id: 13
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x000000000000000000000000000000000000000000000000000000000000000d',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 13
+  Verified
+  Stored in Redis: question:13:*
+
+Processing: STARFISH.png → STARFISH
+  Uploaded to IPFS: bafkreicsckzcvvsrofkdp2garqk5duxh2dflr372wrggafqsapnsveegt4
+  Fee paid
+  Simulate OK, would return id: 14
+  tx status: success, logs: 1
+  first log topics: [
+  '0xe4e4a5db159e85b70061b7a8a51f9cd3a2935ebbdb501b5663b171c8b28dbd79',
+  '0x000000000000000000000000000000000000000000000000000000000000000e',
+  '0x000000000000000000000000e21b33df9b9dabedc240e69b5d3219693f00680a'
+]
+  Submitted on-chain: ID 14
+  Verified
+  Stored in Redis: question:14:*
+
+Done!

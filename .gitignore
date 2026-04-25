@@ -1,0 +1,11 @@
+/node_modules
+*.md
+*.log
+*.env
+*.sh
+!README.md
+!CLAUDE.md
+!AGENTS.md
+*lock.yaml
+!deploy.sh
+.env.local

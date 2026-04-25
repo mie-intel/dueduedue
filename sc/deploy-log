@@ -1,0 +1,95 @@
+==> Deploying to Monad testnet (chain 10143)...
+Compiling 51 files with Solc 0.8.28
+Solc 0.8.28 finished in 1.88s
+Compiler run successful!
+Script ran successfully.
+
+== Logs ==
+  MockUSD proxy:       0x74A22438e4B23D333166AaA62654b062F297A3f4
+  MockIDRX proxy:      0x51C302827dcE7105F74cfA930f2273f75399B14F
+  QuestionPool proxy:  0x1BeB8f692F42a43fFD396e61a364f601F50Eb528
+  CasualPool proxy:    0x1cA81Ba9b1aeF5EF499776186A4417A32C6b8ace
+  GameSession proxy:   0xE7AA5cE7921Ce650a347ED2693DE05f9601f7668
+
+--- .env.local (copy-paste, no spaces) ---
+  NEXT_PUBLIC_MOCK_USD_ADDRESS=0x74A22438e4B23D333166AaA62654b062F297A3f4
+  NEXT_PUBLIC_MOCK_IDRX_ADDRESS=0x51C302827dcE7105F74cfA930f2273f75399B14F
+  NEXT_PUBLIC_QUESTION_POOL_ADDRESS=0x1BeB8f692F42a43fFD396e61a364f601F50Eb528
+  NEXT_PUBLIC_CASUAL_POOL_ADDRESS=0x1cA81Ba9b1aeF5EF499776186A4417A32C6b8ace
+  NEXT_PUBLIC_GAME_SESSION_ADDRESS=0xE7AA5cE7921Ce650a347ED2693DE05f9601f7668
+  NEXT_PUBLIC_PAYMENT_TOKEN_ADDRESS=0x51C302827dcE7105F74cfA930f2273f75399B14F
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 10143
+
+Estimated gas price: 203.000000001 gwei
+
+Estimated total gas used for script: 12070494
+
+Estimated amount required: 2.450310282012070494 ETH
+
+==========================
+
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+
+Transactions saved to: /mnt/d/SOSKOD/projects/duelpic/sc/broadcast/Deploy.s.sol/10143/run-latest.json
+
+Sensitive values saved to: /mnt/d/SOSKOD/projects/duelpic/sc/cache/Deploy.s.sol/10143/run-latest.json
+
+==> New addresses:
+  MockUSD:       0x74A22438e4B23D333166AaA62654b062F297A3f4
+  MockIDRX:      0x51C302827dcE7105F74cfA930f2273f75399B14F
+  QuestionPool:  0x1BeB8f692F42a43fFD396e61a364f601F50Eb528
+  CasualPool:    0x1cA81Ba9b1aeF5EF499776186A4417A32C6b8ace
+  GameSession:   0xE7AA5cE7921Ce650a347ED2693DE05f9601f7668
+
+==> Updating env files...
+    updated: /mnt/d/SOSKOD/projects/duelpic/sc/.env
+    updated: /mnt/d/SOSKOD/projects/duelpic/sc/../apps/.env.local
+
+==> Reading implementation addresses (EIP-1967 slot)...
+
+==> Trying Sourcify verification (no Cloudflare issue)...
+  src/MockUSD.sol:MockUSD (0xe53380accdcb16e9691b406db110887b8e6cd6e3)
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+  src/MockIDRX.sol:MockIDRX (0x76666ed44824bfc59bab9788244812cb5a434e19)
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+  src/QuestionPool.sol:QuestionPool (0x56c42ed29019b4c261b44b0224be30e6e3d37a2d)
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+  src/CasualPool.sol:CasualPool (0x3be48af4a92488dc5db5a0bf65b09c4941005a67)
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+  src/GameSession.sol:GameSession (0xc1bef7a1530948fe695cc4a17eb5e46f5e89cdc2)
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+
+==> Manual verify (Monad explorer, if Sourcify fails):
+    Then paste at: https://testnet.monadexplorer.com/address/<impl_addr>/contract-verification
+    Flattened source: forge flatten src/<Contract>.sol > flat.sol
+
+    Impl addresses to verify:
+      MockUSD:      0xe53380accdcb16e9691b406db110887b8e6cd6e3
+      MockIDRX:     0x76666ed44824bfc59bab9788244812cb5a434e19
+      QuestionPool: 0x56c42ed29019b4c261b44b0224be30e6e3d37a2d
+      CasualPool:   0x3be48af4a92488dc5db5a0bf65b09c4941005a67
+      GameSession:  0xc1bef7a1530948fe695cc4a17eb5e46f5e89cdc2
+
+==> Clearing Redis (stale question data from old deploy)...
+    (skip — node/redis not available from sc/)
+
+==> Done. Re-seed questions:
+    cd ../apps && pnpm tsx scripts/seed-questions.ts
