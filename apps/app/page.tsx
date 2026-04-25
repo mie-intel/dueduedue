@@ -45,7 +45,7 @@ export default function Home() {
             <span className="text-primary">Earn Real Rewards.</span>
           </h1>
           <p className="mt-3 text-text-secondary text-base">
-            3 game modes on Celo. Play free, pay to earn, or battle 1v1.
+            3 game modes. Play free, pay to earn, or battle 1v1.
           </p>
         </div>
 
