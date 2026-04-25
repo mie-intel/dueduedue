@@ -295,6 +295,10 @@ export default function PvpLobbyPage() {
 
   const sendCreateSession = useCallback(
     async (questionIds: bigint[]) => {
+      if (!address) {
+        setError("Wallet not connected");
+        return;
+      }
       const data = encodeFunctionData({
         abi: gameSessionAbi,
         functionName: "createSession",
@@ -309,7 +313,7 @@ export default function PvpLobbyPage() {
         successHeader: "Match created",
       });
     },
-    [sendEncodedTransaction],
+    [sendEncodedTransaction, address],
   );
 
   const handleCancel = useCallback(() => {
@@ -369,6 +373,9 @@ export default function PvpLobbyPage() {
       await ensureReadyToPay(tokenAddress);
 
       const hash = await sendCreateSession(questionIds);
+      if (!hash) {
+        throw new Error("Failed to send transaction for session creation.");
+      }
       const receipt = await waitForSuccessfulReceipt(hash, "Session creation");
       let sessionId: `0x${string}` | null = null;
       try {

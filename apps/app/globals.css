@@ -2,35 +2,35 @@
 
 @theme {
   /* --- Primary — Celo Green --- */
-  --color-primary:       #b174e7;
-  --color-primary-dark:  #cea8f0;
+  --color-primary: #b174e7;
+  --color-primary-dark: #cea8f0;
   --color-primary-light: #e2cbf6;
 
   /* --- Secondary — Celo Gold (official #FCFF52) --- */
-  --color-secondary:       #FCFF52;
-  --color-secondary-dark:  #C8CC00;
-  --color-secondary-light: #FEFFD6;
+  --color-secondary: #fcff52;
+  --color-secondary-dark: #c8cc00;
+  --color-secondary-light: #feffd6;
 
   /* --- Background --- */
-  --color-bg-page:    #FBF6F1;
-  --color-bg-card:    #FFFFFF;
+  --color-bg-page: #fbf6f1;
+  --color-bg-card: #ffffff;
   --color-bg-overlay: rgb(0 0 0 / 0.5);
 
   /* --- Text --- */
-  --color-text-primary:   #1A0329;
-  --color-text-secondary: #6B7280;
-  --color-text-inverse:   #FFFFFF;
-  --color-text-accent:    #35D07F;
+  --color-text-primary: #1a0329;
+  --color-text-secondary: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-text-accent: #35d07f;
 
   /* --- Semantic --- */
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-  --color-error:   #EF4444;
-  --color-info:    #3B82F6;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 
   /* --- Typography — Celo brand: EB Garamond (titles/body) + Jost (CTAs/UI) --- */
-  --font-sans:    var(--font-jost), sans-serif;
-  --font-display: var(--font-eb-garamond), Georgia, serif;
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-sans), sans-serif;
 }
 
 body {

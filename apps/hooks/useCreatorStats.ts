@@ -116,7 +116,7 @@ export function useCreatorStats(address?: string | null) {
           BigInt(i + 1),
         );
 
-        let multicallResults: { status: string; result: unknown }[];
+        let multicallResults: { status: string; result?: unknown }[];
         try {
           multicallResults = await publicClient.multicall({
             contracts: allIds.map((id) => ({

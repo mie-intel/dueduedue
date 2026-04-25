@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Jost } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Providers from "../components/providers";
 import SwipeNav from "../components/SwipeNav";
 
-const jost = Jost({
-  variable: "--font-jost",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const ebGaramond = EB_Garamond({
-  variable: "--font-eb-garamond",
+const openSans = Open_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
@@ -30,10 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${jost.variable} ${ebGaramond.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${openSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-page">
         <Providers>
           <SwipeNav>{children}</SwipeNav>
